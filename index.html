@@ -31,12 +31,23 @@
             color: #3a5fa0;
             font-size: 1.1rem;
         }
+        .audio-player {
+            margin-top: 24px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>青系グラデーションサイト</h1>
         <p>青系の薄いグラデーション背景で、爽やかなデザインです。</p>
+        <!-- 音楽プレイヤー追加 -->
+        <div class="audio-player">
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                お使いのブラウザはaudioタグをサポートしていません。
+            </audio>
+            <p style="font-size:0.95rem; color:#2a4d8f; margin-top:8px;">BGMをお楽しみください！</p>
+        </div>
     </div>
 </body>
 </html>
