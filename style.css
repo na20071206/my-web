@@ -1,11 +1,12 @@
 body {
+    /* 青系グラデーション背景 */
+    background: linear-gradient(135deg, #4f8cff 0%, #1e3c72 100%);
     min-height: 100vh;
     margin: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 50%, #b6d0f7 100%);
-    font-family: 'Segoe UI', 'Arial', sans-serif;
     transition: background 1s;
 }
 .container {
