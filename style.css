@@ -1,13 +1,26 @@
 body {
-    /* 青系グラデーション背景 */
-    background: linear-gradient(135deg, #4f8cff 0%, #1e3c72 100%);
+    /* 夕日風グラデーション背景アニメーション */
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', 'Arial', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: sunset-gradient 10s linear infinite alternate;
+    background: linear-gradient(135deg, #ffb347 0%, #ffcc33 40%, #ff5e62 80%, #2b5876 100%);
     transition: background 1s;
+}
+
+@keyframes sunset-gradient {
+    0% {
+        background: linear-gradient(135deg, #ffb347 0%, #ffcc33 40%, #ff5e62 80%, #2b5876 100%);
+    }
+    50% {
+        background: linear-gradient(135deg, #ff5e62 0%, #ffcc33 40%, #ffb347 80%, #2b5876 100%);
+    }
+    100% {
+        background: linear-gradient(135deg, #2b5876 0%, #ff5e62 40%, #ffcc33 80%, #ffb347 100%);
+    }
 }
 .container {
     background: rgba(255,255,255,0.7);
